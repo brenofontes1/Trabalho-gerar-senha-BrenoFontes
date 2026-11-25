@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gerador de senha forte</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="caixa">
+    <h1>Gere aqui a sua senha forte</h1>
+
+    <div class="linha">
+      <label for="caracteres">Caracteres (mínimo 8):</label>
+      <input id="caracteres" type="number" min="8" value="8">
+    </div>
+
+    <div class="linha">
+      <button id="btn-gerar" type="button">Gerar senha</button>
+      <input id="senha" type="text" placeholder="Senha" readonly>
+      <button id="btn-copiar" type="button">Copiar</button>
+    </div>
+
+    <p id="mensagem" role="status"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
